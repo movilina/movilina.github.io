@@ -6,7 +6,7 @@
 <title>Movilina | از ایده تا تبلیغ نهایی</title>
 
 <meta name="description" content="مویلینا، استودیوی خلاق تبلیغات: ایده‌پردازی، ساخت ویدیو با هوش مصنوعی، تدوین سینمایی و موشن‌گرافیک برای برندها.">
-<meta name="theme-color" content="#030303">
+<meta name="theme-color" content="#040404">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 <meta property="og:type" content="website">
@@ -23,133 +23,214 @@
 <meta name="twitter:description" content="استودیوی خلاق تبلیغات — ساخت ویدیوی تبلیغاتی با هوش مصنوعی و تخصص انسانی.">
 <meta name="twitter:image" content="https://movilina.github.io/og-image.jpg">
 
-<link rel="preload" href="fonts/Vazirmatn-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Vazirmatn-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Estedad-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
 <style>
-@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Light.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
-@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
-@font-face{font-family:'Playfair Display';src:url('fonts/PlayfairDisplay-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Light.woff2') format('woff2');font-weight:300;font-display:swap}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Vazirmatn';src:url('fonts/Vazirmatn-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Estedad';src:url('fonts/Estedad-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Estedad';src:url('fonts/Estedad-SemiBold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Estedad';src:url('fonts/Estedad-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Estedad';src:url('fonts/Estedad-Black.woff2') format('woff2');font-weight:900;font-display:swap}
+@font-face{font-family:'Playfair Display';src:url('fonts/PlayfairDisplay-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
 
-:root{--black:#030303;--gold:#D4AF37;--gold-light:#F5D76E;--purple:#6D28D9;--cream:#F7F2E8;--muted:#9A948A;--border:rgba(212,175,55,.25)}
+:root{
+--bg:#040404;
+--surface:#0A0A09;
+--surface-2:#100F0D;
+--gold:#D4AF37;
+--gold-light:#F5D76E;
+--gold-deep:#8B6914;
+--purple:#6D28D9;
+--cream:#F7F2E8;
+--text:#C9C3B8;
+--muted:#8E887E;
+--line:rgba(212,175,55,.18);
+--line-strong:rgba(212,175,55,.42);
+--r:4px;
+--display:'Estedad','Vazirmatn',sans-serif;
+--body:'Vazirmatn',sans-serif;
+--gap:clamp(14px,1.4vw,20px);
+--pad-x:max(7vw,calc((100% - 1300px)/2));
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--black);color:var(--cream);font-family:'Vazirmatn',sans-serif;overflow-x:hidden}
-body::before{content:"";position:fixed;width:1000px;height:1000px;top:-480px;right:-360px;background:radial-gradient(circle,rgba(212,175,55,.13),rgba(109,40,217,.07) 42%,transparent 68%);pointer-events:none;z-index:-1}
-body::after{content:"";position:fixed;width:900px;height:900px;bottom:-480px;left:-420px;background:radial-gradient(circle,rgba(109,40,217,.12),transparent 66%);pointer-events:none;z-index:-1}
-
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-weight:300;
+overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::before{content:"";position:fixed;width:1000px;height:1000px;top:-480px;right:-360px;background:radial-gradient(circle,rgba(212,175,55,.12),rgba(109,40,217,.06) 42%,transparent 68%);pointer-events:none;z-index:-1}
+body::after{content:"";position:fixed;width:900px;height:900px;bottom:-480px;left:-420px;background:radial-gradient(circle,rgba(109,40,217,.11),transparent 66%);pointer-events:none;z-index:-1}
 :focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
 
-.icon{width:30px;height:30px;stroke:var(--gold);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;display:block}
-.icon-sm{width:19px;height:19px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+/* ---------- typography system ---------- */
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;line-height:1.42}
+.prose{text-align:justify;text-justify:inter-word;hyphens:none;line-height:2.1;font-size:16px;color:var(--text)}
+.prose-center{text-align:justify;text-align-last:center;text-justify:inter-word;line-height:2.1}
 
-nav{position:fixed;top:0;right:0;width:100%;height:90px;padding:0 max(6vw,calc((100% - 1400px)/2));display:flex;align-items:center;justify-content:space-between;z-index:100;background:linear-gradient(to bottom,rgba(3,3,3,.96),rgba(3,3,3,.55) 55%,transparent)}
-.logo{font-family:'Playfair Display',serif;direction:ltr;font-size:28px;letter-spacing:4px;color:var(--gold-light);text-shadow:0 0 25px rgba(212,175,55,.25);text-decoration:none}
-.nav-links{display:flex;gap:38px;list-style:none}.nav-links a{color:#B4AEA4;text-decoration:none;font-size:12px;transition:.4s}.nav-links a:hover{color:var(--gold-light)}
-.nav-button{color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:12px 22px;text-decoration:none;font-size:11px;transition:.4s}.nav-button:hover{background:var(--gold);color:#050505}
-.nav-toggle{display:none;width:44px;height:44px;background:none;border:1px solid rgba(212,175,55,.4);color:var(--gold-light);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:0}
-.nav-toggle span{display:block;width:19px;height:1.4px;background:var(--gold-light);transition:.35s}
+.icon{width:28px;height:28px;stroke:var(--gold);fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;display:block}
+.icon-sm{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;right:0;width:100%;height:86px;padding:0 max(6vw,calc((100% - 1400px)/2));display:flex;align-items:center;justify-content:space-between;z-index:100;transition:background .45s,backdrop-filter .45s,height .45s,border-color .45s;border-bottom:1px solid transparent;background:linear-gradient(to bottom,rgba(4,4,4,.92),transparent)}
+nav.scrolled{height:72px;background:rgba(6,6,5,.86);backdrop-filter:blur(16px);border-bottom-color:var(--line)}
+.logo{font-family:'Playfair Display',serif;direction:ltr;font-size:26px;letter-spacing:5px;color:var(--gold-light);text-shadow:0 0 26px rgba(212,175,55,.22);text-decoration:none}
+.nav-links{display:flex;gap:34px;list-style:none}
+.nav-links a{position:relative;color:#A9A399;text-decoration:none;font-size:12.5px;font-family:var(--display);font-weight:500;padding:6px 0;transition:color .35s}
+.nav-links a::after{content:"";position:absolute;bottom:0;right:0;width:0;height:1px;background:var(--gold);transition:width .38s cubic-bezier(.2,.7,.3,1)}
+.nav-links a:hover{color:var(--gold-light)}.nav-links a:hover::after{width:100%}
+.nav-button{font-family:var(--display);font-weight:500;color:var(--gold-light);border:1px solid var(--line-strong);border-radius:var(--r);padding:11px 22px;text-decoration:none;font-size:11.5px;transition:.4s}
+.nav-button:hover{background:var(--gold);color:#050505;border-color:transparent}
+.nav-toggle{display:none;width:44px;height:44px;background:none;border:1px solid var(--line-strong);border-radius:var(--r);color:var(--gold-light);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;padding:0}
+.nav-toggle span{display:block;width:18px;height:1.4px;background:var(--gold-light);transition:.35s}
 .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.4px) rotate(45deg)}
 .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
 .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.4px) rotate(-45deg)}
-.mobile-menu{position:fixed;inset:0;z-index:99;background:rgba(3,3,3,.985);display:none;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.mobile-menu{position:fixed;inset:0;z-index:99;background:rgba(4,4,4,.985);display:none;flex-direction:column;align-items:center;justify-content:center;gap:30px}
 .mobile-menu.open{display:flex}
-.mobile-menu a{color:#CFC9BE;text-decoration:none;font-size:19px;letter-spacing:1px;transition:.3s}.mobile-menu a:hover{color:var(--gold-light)}
-.mobile-menu .mm-cta{margin-top:14px;color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:14px 30px;font-size:13px}
+.mobile-menu a{font-family:var(--display);font-weight:500;color:#CFC9BE;text-decoration:none;font-size:20px;letter-spacing:.5px;transition:.3s}.mobile-menu a:hover{color:var(--gold-light)}
+.mobile-menu .mm-cta{margin-top:12px;color:var(--gold-light);border:1px solid var(--line-strong);border-radius:var(--r);padding:14px 32px;font-size:14px}
 
+/* ---------- hero ---------- */
 .video-hero{position:relative;width:100%;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#000}
 .hero-video{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%,-50%);object-fit:cover;z-index:1}
-.video-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(0,0,0,.42),rgba(0,0,0,.22) 35%,rgba(0,0,0,.35) 65%,rgba(0,0,0,.72));pointer-events:none}
-.hero-bottom-fade{position:absolute;bottom:0;left:0;width:100%;height:180px;z-index:3;background:linear-gradient(to bottom,transparent,#030303);pointer-events:none}
-.hero-content{position:relative;z-index:4;text-align:center;padding:0 22px;max-width:900px}
-.hero-brand{font-family:'Playfair Display',serif;direction:ltr;font-size:clamp(38px,6vw,76px);letter-spacing:clamp(6px,1.2vw,14px);color:var(--gold-light);text-shadow:0 4px 40px rgba(0,0,0,.7),0 0 60px rgba(212,175,55,.2);line-height:1.1}
-.hero-tagline{margin-top:22px;font-size:clamp(19px,2.6vw,32px);font-weight:300;color:#F2ECE0;text-shadow:0 2px 24px rgba(0,0,0,.85)}
-.hero-sub{margin-top:16px;font-size:clamp(12px,1.4vw,15px);color:#BDB7AC;letter-spacing:1px;text-shadow:0 2px 18px rgba(0,0,0,.9)}
-.hero-actions{margin-top:38px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn-gold{display:inline-block;padding:15px 34px;color:#080808;background:linear-gradient(110deg,#8B6914,#D4AF37,#F5D76E);text-decoration:none;font-size:12px;font-weight:600;box-shadow:0 10px 40px rgba(0,0,0,.45);transition:.4s}.btn-gold:hover{transform:translateY(-4px)}
-.btn-ghost{display:inline-block;padding:15px 34px;color:var(--gold-light);border:1px solid rgba(212,175,55,.55);background:rgba(0,0,0,.25);backdrop-filter:blur(4px);text-decoration:none;font-size:12px;transition:.4s}.btn-ghost:hover{background:var(--gold);color:#050505;border-color:transparent}
-.scroll-down{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:5;color:rgba(255,255,255,.7);font-size:10px;letter-spacing:2px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.3s}.scroll-down:hover{color:var(--gold-light)}
-.scroll-down span{width:1px;height:40px;display:block;background:linear-gradient(to bottom,#F5D76E,transparent);animation:scrollLine 2s infinite}
+.video-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(0,0,0,.46),rgba(0,0,0,.24) 35%,rgba(0,0,0,.38) 65%,rgba(0,0,0,.75))}
+.hero-bottom-fade{position:absolute;bottom:0;left:0;width:100%;height:190px;z-index:3;background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none}
+.hero-content{position:relative;z-index:4;text-align:center;padding:0 22px;max-width:920px}
+.hero-eyebrow{font-family:var(--display);font-weight:500;font-size:clamp(10px,1.1vw,12px);letter-spacing:5px;color:var(--gold);margin-bottom:26px;text-shadow:0 2px 18px rgba(0,0,0,.9)}
+.hero-brand{font-family:'Playfair Display',serif;direction:ltr;font-size:clamp(42px,6.4vw,82px);font-weight:500;letter-spacing:clamp(8px,1.5vw,18px);color:var(--gold-light);text-shadow:0 4px 44px rgba(0,0,0,.75),0 0 70px rgba(212,175,55,.22);line-height:1.05}
+.hero-rule{width:70px;height:1px;margin:26px auto;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.hero-tagline{font-family:var(--display);font-weight:600;font-size:clamp(20px,2.7vw,34px);color:#F4EFE4;text-shadow:0 2px 26px rgba(0,0,0,.88);line-height:1.5}
+.hero-sub{margin-top:14px;font-size:clamp(12.5px,1.35vw,15px);color:#B6B0A5;letter-spacing:.5px;text-shadow:0 2px 18px rgba(0,0,0,.92)}
+.hero-actions{margin-top:40px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-gold{font-family:var(--display);font-weight:600;display:inline-block;padding:15px 34px;border-radius:var(--r);color:#0A0805;background:linear-gradient(110deg,var(--gold-deep),var(--gold),var(--gold-light));text-decoration:none;font-size:12.5px;box-shadow:0 12px 40px rgba(0,0,0,.5);transition:transform .4s,box-shadow .4s}
+.btn-gold:hover{transform:translateY(-4px);box-shadow:0 18px 50px rgba(0,0,0,.6),0 0 40px rgba(212,175,55,.28)}
+.btn-ghost{font-family:var(--display);font-weight:500;display:inline-block;padding:15px 34px;border-radius:var(--r);color:var(--gold-light);border:1px solid var(--line-strong);background:rgba(0,0,0,.28);backdrop-filter:blur(5px);text-decoration:none;font-size:12.5px;transition:.4s}
+.btn-ghost:hover{background:var(--gold);color:#050505;border-color:transparent;transform:translateY(-4px)}
+.scroll-down{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:5;color:rgba(255,255,255,.62);font-size:10px;letter-spacing:2.5px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:color .3s}.scroll-down:hover{color:var(--gold-light)}
+.scroll-down span{width:1px;height:40px;display:block;background:linear-gradient(to bottom,var(--gold-light),transparent);animation:scrollLine 2s infinite}
 @keyframes scrollLine{0%{opacity:0;transform:translateY(-8px)}50%{opacity:1}100%{opacity:0;transform:translateY(10px)}}
 
-section{padding:clamp(90px,9vw,130px) max(7vw,calc((100% - 1320px)/2))}
-section[id]{scroll-margin-top:90px}
-.section-label{color:var(--gold);font-size:11px;letter-spacing:3px;font-weight:500;margin-bottom:20px}
-.section-title{font-size:clamp(34px,4.4vw,62px);font-weight:300;line-height:1.4}.section-title span{color:var(--gold-light)}
-.gold-line{width:140px;height:1px;margin:auto;background:linear-gradient(to right,transparent,var(--gold),transparent)}
-.intro-text{margin-top:38px;max-width:860px;color:#B3AEA5;font-size:16px;line-height:2.45}
+/* ---------- section shell ---------- */
+section{padding:clamp(88px,8.5vw,126px) var(--pad-x)}
+section[id]{scroll-margin-top:86px}
+.section-head{margin-bottom:clamp(44px,4.4vw,58px)}
+.section-label{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;color:var(--gold);font-size:11px;letter-spacing:3.4px;margin-bottom:18px}
+.section-label::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.75}
+.section-title{font-family:var(--body);font-weight:300;font-size:clamp(32px,4.2vw,58px);line-height:1.45;letter-spacing:-.005em;color:#EFEAE0;max-width:15ch}
+.section-title span{font-family:var(--display);font-weight:700;color:var(--gold-light)}
+.section-title.wide{max-width:20ch}
+.gold-line{width:130px;height:1px;margin:auto;background:linear-gradient(to right,transparent,var(--gold),transparent)}
 
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .85s cubic-bezier(.2,.7,.3,1),transform .85s cubic-bezier(.2,.7,.3,1);transition-delay:var(--d,0s)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.3,1),transform .8s cubic-bezier(.2,.7,.3,1);transition-delay:var(--d,0s)}
 .reveal.in{opacity:1;transform:none}
 
-.ai-section{position:relative;background:radial-gradient(circle at 25% 45%,rgba(109,40,217,.13),transparent 35%)}
-.ai-card{margin-top:58px;padding:48px;border:1px solid var(--border);background:linear-gradient(135deg,rgba(212,175,55,.055),rgba(109,40,217,.07));position:relative;overflow:hidden}
-.ai-icon{margin-bottom:22px}.ai-icon .icon{width:38px;height:38px}
-.ai-card h3{font-size:30px;color:var(--gold-light);font-weight:500;margin-bottom:20px}.ai-card p{color:var(--muted);line-height:2.3;max-width:850px}
+/* ---------- intro ---------- */
+.intro-text{max-width:78ch}
+.intro-text strong{font-family:var(--display);font-weight:600;color:var(--gold-light)}
 
-.services{margin-top:58px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(212,175,55,.2)}
-.service{min-height:290px;padding:38px 34px;background:#030303;transition:background .5s,box-shadow .5s}
-.service:hover{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(109,40,217,.08));box-shadow:inset 0 0 0 1px rgba(212,175,55,.38)}
-.service-icon{margin-bottom:16px}.service-number{color:var(--gold);font-size:11px;letter-spacing:2px}.service h3{font-size:22px;color:var(--gold-light);font-weight:500;margin:16px 0 13px}.service p{color:var(--muted);font-size:14px;line-height:2.15}.service ul{margin-top:16px;padding-right:20px;color:#A7A197;font-size:13px;line-height:2.25}
-.package{margin-top:40px;border:1px solid rgba(212,175,55,.35);padding:48px;text-align:center;background:radial-gradient(circle,rgba(212,175,55,.07),transparent 65%)}.package h3{color:var(--gold-light);font-size:clamp(22px,2.4vw,30px);font-weight:500;margin-bottom:16px}.package p{color:var(--muted);line-height:2.2}
+/* ---------- ai card ---------- */
+.ai-section{position:relative;background:radial-gradient(circle at 25% 45%,rgba(109,40,217,.12),transparent 36%)}
+.ai-card{padding:clamp(32px,3.6vw,52px);border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(135deg,rgba(212,175,55,.06),rgba(109,40,217,.075));position:relative;overflow:hidden}
+.ai-card::after{content:"";position:absolute;top:0;right:0;width:120px;height:1px;background:linear-gradient(to left,var(--gold),transparent)}
+.ai-icon{margin-bottom:22px}.ai-icon .icon{width:36px;height:36px}
+.ai-card h3{font-family:var(--display);font-weight:700;font-size:clamp(21px,2.3vw,29px);color:var(--gold-light);margin-bottom:18px}
+.ai-card .prose{max-width:82ch;color:var(--muted)}
 
-.portfolio{margin-top:58px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.project{position:relative;aspect-ratio:16/10;overflow:hidden;border:1px solid rgba(212,175,55,.20);background:#070707;transition:.5s;cursor:pointer}
-.project:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.65);box-shadow:0 20px 60px rgba(0,0,0,.6)}
-.project img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .7s}.project:hover img{transform:scale(1.06)}
-.project-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.05) 65%);pointer-events:none}
-.project-play{position:absolute;z-index:4;top:50%;left:50%;transform:translate(-50%,-50%);width:65px;height:65px;border-radius:50%;border:1px solid rgba(245,215,110,.9);display:flex;align-items:center;justify-content:center;color:var(--gold-light);background:rgba(0,0,0,.45);backdrop-filter:blur(5px);font-size:18px;transition:.4s;pointer-events:none}
-.project:hover .project-play{background:var(--gold);color:#000;border-color:transparent;transform:translate(-50%,-50%) scale(1.1)}
-.project-info{position:absolute;z-index:4;bottom:24px;right:24px;left:24px}.project-number{color:var(--gold);font-size:10px;letter-spacing:1px;margin-bottom:8px}.project h3{font-size:19px;color:#fff;font-weight:500}.project p{color:#AAA49A;font-size:11px;margin-top:6px}
+/* ---------- services ---------- */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.service{position:relative;min-height:300px;padding:clamp(28px,2.6vw,38px) clamp(24px,2.2vw,34px);background:var(--surface);transition:background .5s,box-shadow .5s}
+.service:hover{background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--line-strong)}
+.service-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.service-number{font-family:var(--display);font-weight:700;color:rgba(212,175,55,.32);font-size:26px;letter-spacing:1px;transition:color .5s}
+.service:hover .service-number{color:rgba(245,215,110,.6)}
+.service h3{font-family:var(--display);font-weight:600;font-size:19.5px;color:var(--gold-light);margin-bottom:13px;line-height:1.6}
+.service .prose{font-size:14px;line-height:2.05;color:var(--muted)}
+.service ul{margin-top:16px;padding-right:18px;color:#9A9489;font-size:13px;line-height:2.2}
+.service li::marker{color:var(--gold)}
+.package{margin-top:var(--gap);border:1px solid var(--line-strong);border-radius:var(--r);padding:clamp(32px,3.4vw,48px);text-align:center;background:radial-gradient(circle,rgba(212,175,55,.08),transparent 66%)}
+.package h3{font-family:var(--display);font-weight:600;color:var(--gold-light);font-size:clamp(20px,2.3vw,29px);margin-bottom:14px;line-height:1.6}
+.package p{color:var(--muted);line-height:2.1;max-width:60ch;margin:auto}
 
-.lightbox{position:fixed;inset:0;z-index:300;background:rgba(3,3,3,.95);backdrop-filter:blur(14px);display:none;align-items:center;justify-content:center;padding:80px 4vw}
+/* ---------- portfolio ---------- */
+.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.project{position:relative;aspect-ratio:16/10;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);cursor:pointer;transition:transform .5s,border-color .5s,box-shadow .5s}
+.project:hover{transform:translateY(-8px);border-color:var(--line-strong);box-shadow:0 24px 64px rgba(0,0,0,.65)}
+.project img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .8s cubic-bezier(.2,.7,.3,1)}
+.project:hover img{transform:scale(1.07)}
+.project-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(0,0,0,.94),rgba(0,0,0,.35) 42%,rgba(0,0,0,.02) 72%);pointer-events:none}
+.project-play{position:absolute;z-index:4;top:50%;left:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;border:1px solid rgba(245,215,110,.9);display:flex;align-items:center;justify-content:center;color:var(--gold-light);background:rgba(0,0,0,.42);backdrop-filter:blur(5px);font-size:17px;transition:.4s;pointer-events:none}
+.project:hover .project-play{background:var(--gold);color:#000;border-color:transparent;transform:translate(-50%,-50%) scale(1.12)}
+.project-info{position:absolute;z-index:4;bottom:24px;right:24px;left:24px}
+.project-number{font-family:var(--display);font-weight:600;color:var(--gold);font-size:10.5px;letter-spacing:2px;margin-bottom:8px}
+.project h3{font-family:var(--display);font-weight:600;font-size:18.5px;color:#fff;line-height:1.5}
+.project p{color:#A29C92;font-size:11.5px;margin-top:6px}
+
+/* ---------- lightbox ---------- */
+.lightbox{position:fixed;inset:0;z-index:300;background:rgba(4,4,4,.955);backdrop-filter:blur(14px);display:none;align-items:center;justify-content:center;padding:80px 4vw}
 .lightbox.open{display:flex}
-.lightbox video{width:min(1400px,92vw);aspect-ratio:16/9;max-height:min(80vh,calc(100vh - 190px));object-fit:contain;background:#000;border:1px solid rgba(212,175,55,.30);box-shadow:0 30px 90px rgba(0,0,0,.85)}
+.lightbox video{width:min(1400px,92vw);aspect-ratio:16/9;max-height:min(80vh,calc(100vh - 190px));object-fit:contain;background:#000;border:1px solid var(--line);border-radius:var(--r);box-shadow:0 30px 90px rgba(0,0,0,.85)}
 .lightbox-spinner{position:absolute;width:52px;height:52px;border:2px solid rgba(212,175,55,.22);border-top-color:var(--gold-light);border-radius:50%;animation:spin .9s linear infinite;pointer-events:none;opacity:0;transition:opacity .3s}
 .lightbox.loading .lightbox-spinner{opacity:1}
 @keyframes spin{to{transform:rotate(360deg)}}
-.lightbox-close{position:absolute;top:28px;left:28px;width:50px;height:50px;border-radius:50%;border:1px solid rgba(212,175,55,.5);background:rgba(0,0,0,.55);color:var(--gold-light);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.35s;font-family:inherit}.lightbox-close:hover{background:var(--gold);color:#000;transform:rotate(90deg)}
-.lightbox-caption{position:absolute;bottom:34px;right:0;left:0;text-align:center;color:var(--gold-light);font-size:15px;letter-spacing:1px;pointer-events:none}
-.lightbox-hint{position:absolute;top:38px;right:28px;font-size:10px;letter-spacing:2px;color:#6E6A63;pointer-events:none}
+.lightbox-close{position:absolute;top:26px;left:26px;width:48px;height:48px;border-radius:50%;border:1px solid var(--line-strong);background:rgba(0,0,0,.55);color:var(--gold-light);font-size:21px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.35s;font-family:inherit}
+.lightbox-close:hover{background:var(--gold);color:#000;transform:rotate(90deg)}
+.lightbox-caption{position:absolute;bottom:32px;right:0;left:0;text-align:center;font-family:var(--display);font-weight:500;color:var(--gold-light);font-size:14.5px;letter-spacing:.5px;pointer-events:none}
+.lightbox-hint{position:absolute;top:34px;right:28px;font-size:10px;letter-spacing:2px;color:#66625B;pointer-events:none}
 
-.about{background:radial-gradient(circle at 80% 50%,rgba(109,40,217,.09),transparent 35%)}.about-content{max-width:1050px}.about-content p{color:#B1ACA3;font-size:15px;line-height:2.6;margin-top:30px}
-.contact{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,rgba(109,40,217,.10),transparent 50%)}.contact h2{font-size:clamp(38px,5.2vw,68px);font-weight:300;line-height:1.42}.contact h2 span{color:var(--gold-light)}.contact>div>p{max-width:650px;margin:28px auto 38px;color:var(--muted);line-height:2.3}
-.contact-info{margin:55px auto 0;max-width:900px;display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.contact-item{padding:25px 20px;border:1px solid rgba(212,175,55,.2);background:rgba(255,255,255,.015);transition:.4s}.contact-item:hover{border-color:rgba(212,175,55,.5);background:rgba(255,255,255,.03)}
-.contact-item span{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--gold);font-size:12px;margin-bottom:10px}
-.contact-item a{color:#E4DFD4;text-decoration:none;font-size:14px;direction:ltr;display:inline-block}.contact-item a:hover{color:var(--gold-light)}
-footer{border-top:1px solid rgba(212,175,55,.15);padding:32px max(7vw,calc((100% - 1320px)/2));display:flex;justify-content:space-between;gap:20px;color:#6E6A63;font-size:11px}
+/* ---------- about / contact / footer ---------- */
+.about{background:radial-gradient(circle at 80% 50%,rgba(109,40,217,.085),transparent 36%)}
+.about-content{max-width:80ch}
+.about-content .prose{color:var(--text);font-size:15.5px;margin-top:26px}
+.contact{min-height:68vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,rgba(109,40,217,.1),transparent 52%)}
+.contact-inner{max-width:820px}
+.contact h2{font-family:var(--body);font-weight:300;font-size:clamp(34px,4.8vw,62px);line-height:1.45;color:#EFEAE0}
+.contact h2 span{font-family:var(--display);font-weight:700;color:var(--gold-light)}
+.contact .prose-center{max-width:62ch;margin:26px auto 36px;color:var(--muted);font-size:15.5px}
+.contact-info{margin:52px auto 0;max-width:900px;display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.contact-item{padding:24px 18px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);transition:.4s}
+.contact-item:hover{border-color:var(--line-strong);background:var(--surface-2);transform:translateY(-4px)}
+.contact-item span{display:flex;align-items:center;justify-content:center;gap:8px;font-family:var(--display);font-weight:500;color:var(--gold);font-size:12px;margin-bottom:11px}
+.contact-item a{color:#E4DFD4;text-decoration:none;font-size:14px;direction:ltr;display:inline-block;transition:color .3s;word-break:break-all}
+.contact-item a:hover{color:var(--gold-light)}
+footer{border-top:1px solid var(--line);padding:30px var(--pad-x);display:flex;justify-content:space-between;align-items:center;gap:20px;color:#6E6A63;font-size:11.5px}
+footer a{color:#8E887E;text-decoration:none;transition:color .3s}footer a:hover{color:var(--gold-light)}
 
-@media(max-width:1100px){.portfolio,.services{grid-template-columns:repeat(2,1fr)}}
+/* ---------- responsive ---------- */
+@media(max-width:1100px){.portfolio,.services{grid-template-columns:repeat(2,1fr)}.section-title{max-width:20ch}}
 @media(max-width:820px){.nav-links{display:none}.nav-toggle{display:flex}.nav-button{display:none}}
 @media(hover:none){.project-play{background:rgba(212,175,55,.92);color:#000;border-color:transparent}}
 @media(max-width:700px){
-nav{height:75px;padding:0 20px}.logo{font-size:23px}
-.video-hero{height:100svh;min-height:550px}.hero-bottom-fade{height:150px}
-.hero-actions{margin-top:30px;gap:10px}.btn-gold,.btn-ghost{padding:13px 24px;font-size:11px}
-section{padding:80px 22px}
-.services{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr;gap:14px}.project{aspect-ratio:3/2}
+nav{height:72px;padding:0 20px}nav.scrolled{height:64px}.logo{font-size:22px;letter-spacing:4px}
+.video-hero{height:100svh;min-height:540px}.hero-bottom-fade{height:150px}
+.hero-eyebrow{margin-bottom:18px;letter-spacing:3.5px}.hero-rule{margin:20px auto}
+.hero-actions{margin-top:32px;gap:10px}.btn-gold,.btn-ghost{padding:13px 24px;font-size:11.5px}
+section{padding:76px 22px}
+.section-head{margin-bottom:36px}.section-title{max-width:none;font-size:clamp(27px,7.4vw,36px)}
+.prose,.prose-center{font-size:14.5px;line-height:2.05;text-align:right;text-align-last:auto}
+.services{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}
+.project{aspect-ratio:3/2}
 .contact-info{grid-template-columns:1fr}
-.ai-card{padding:35px 25px}.package{padding:35px 25px}.service{padding:35px 25px}
-.lightbox{padding:70px 16px}.lightbox-close{top:16px;left:16px;width:42px;height:42px;font-size:18px}.lightbox-hint{display:none}.lightbox-caption{bottom:24px;font-size:13px}
-footer{flex-direction:column;gap:15px;text-align:center}
+.contact h2{font-size:clamp(28px,7.6vw,38px)}
+.lightbox{padding:70px 14px}.lightbox-close{top:14px;left:14px;width:42px;height:42px;font-size:18px}
+.lightbox-hint{display:none}.lightbox-caption{bottom:22px;font-size:13px}
+footer{flex-direction:column;gap:14px;text-align:center}
 }
 @media(prefers-reduced-motion:reduce){
 html{scroll-behavior:auto}
 .reveal{opacity:1;transform:none;transition:none}
 .scroll-down span{animation:none}
-.project:hover{transform:none}.project:hover img{transform:none}
-.btn-gold:hover{transform:none}
-.lightbox-spinner{animation-duration:2s}
+.project:hover,.contact-item:hover,.btn-gold:hover,.btn-ghost:hover{transform:none}
+.project:hover img{transform:none}
+.lightbox-spinner{animation-duration:2.4s}
 }
 </style>
 </head>
 <body>
 
-<nav>
+<nav id="nav">
 <a href="#top" class="logo">MOVILINA</a>
 <ul class="nav-links">
 <li><a href="#services">خدمات ما</a></li>
@@ -177,9 +258,11 @@ html{scroll-behavior:auto}
 </video>
 <div class="video-overlay"></div>
 <div class="hero-content">
+<div class="hero-eyebrow">استودیوی خلاق تبلیغات</div>
 <h1 class="hero-brand">MOVILINA</h1>
+<div class="hero-rule"></div>
 <p class="hero-tagline">از ایده تا تبلیغ نهایی</p>
-<p class="hero-sub">استودیوی خلاق تبلیغات — با هوش مصنوعی و تخصص انسانی</p>
+<p class="hero-sub">با هوش مصنوعی و تخصص انسانی</p>
 <div class="hero-actions">
 <a href="#portfolio" class="btn-gold">دیدن نمونه‌کارها</a>
 <a href="#contact" class="btn-ghost">شروع همکاری</a>
@@ -192,66 +275,107 @@ html{scroll-behavior:auto}
 <div class="gold-line"></div>
 
 <section class="intro" id="intro">
-<div class="section-label reveal">MOVILINA | استودیوی خلاق تبلیغات</div>
+<div class="section-head">
+<div class="section-label reveal">استودیوی خلاق تبلیغات</div>
 <h2 class="section-title reveal" style="--d:.08s">هر چیز ماندگاری، <span>از یک ایده شروع می‌شود.</span></h2>
-<p class="intro-text reveal" style="--d:.16s">
+</div>
+<p class="intro-text prose reveal" style="--d:.16s">
 همه‌چیز از یک ایده‌ی ناب شروع می‌شود؛ با کارگردانیِ دقیق، دکوپاژی که چشم را می‌رباید، و تدوینی که ریتمِ دل‌نشینِ داستان را می‌سازد.
 تمام این مسیر، با ذهن و تخصصِ تیمِ ما پیش می‌رود، و در لحظه‌ی ساخت فیلم، هوش مصنوعی را به خدمت می‌گیریم تا تصاویری خلق کنیم که تا پیش از این، فقط در رویا ممکن بودند.
-<br><br>
-نتیجه؟
-<br>
-ویدیوهایی که نه‌تنها دیده می‌شوند، که در ذهن می‌مانند، حس می‌شوند، و برندِ شما را متمایز می‌کنند.
+</p>
+<p class="intro-text prose reveal" style="--d:.22s;margin-top:26px">
+نتیجه؟ ویدیوهایی که نه‌تنها دیده می‌شوند، که <strong>در ذهن می‌مانند</strong>، حس می‌شوند، و برندِ شما را متمایز می‌کنند.
 </p>
 </section>
 
 <section class="ai-section">
+<div class="section-head">
 <div class="section-label reveal">هوش مصنوعی × خلاقیت</div>
-<h2 class="section-title reveal" style="--d:.08s">ایده‌هایی خلق کن که <span>رقبا هنوز به آن فکر نکرده‌اند.</span></h2>
+<h2 class="section-title wide reveal" style="--d:.08s">ایده‌هایی خلق کن که <span>رقبا هنوز به آن فکر نکرده‌اند.</span></h2>
+</div>
 <div class="ai-card reveal" style="--d:.16s">
 <div class="ai-icon">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><path d="M9.5 2.5v4M14.5 2.5v4M9.5 17.5v4M14.5 17.5v4M2.5 9.5h4M2.5 14.5h4M17.5 9.5h4M17.5 14.5h4"/><path d="M10.5 10.5h3v3h-3z"/></svg>
 </div>
 <h3>خلاقیت، در چند ثانیه</h3>
-<p>دیگر وقت هدر رفتن برای جلسات طوفان فکری نیست. با کمک هوش مصنوعی، صدها ایده‌ی نوآورانه و سفارشی‌سازی‌شده مخصوص برند شما خلق می‌کنیم. سپس بهترین ایده‌ها را انتخاب می‌کنیم؛ ایده‌هایی که نه‌تنها خلاق‌اند، بلکه شدنی و تأثیرگذارند.</p>
+<p class="prose">دیگر وقت هدر رفتن برای جلسات طوفان فکری نیست. با کمک هوش مصنوعی، صدها ایده‌ی نوآورانه و سفارشی‌سازی‌شده مخصوص برند شما خلق می‌کنیم. سپس بهترین ایده‌ها را انتخاب می‌کنیم؛ ایده‌هایی که نه‌تنها خلاق‌اند، بلکه شدنی و تأثیرگذارند.</p>
 </div>
 </section>
 
 <section id="services">
+<div class="section-head">
 <div class="section-label reveal">خدمات ما</div>
 <h2 class="section-title reveal" style="--d:.08s">از یک ایده ساده تا <span>یک تبلیغ ماندگار.</span></h2>
+</div>
 <div class="services">
 
-<div class="service reveal"><div class="service-icon">
+<div class="service reveal">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 18.5h5M10.5 21.5h3"/><path d="M12 2.5a6.5 6.5 0 0 0-3.9 11.7c.5.4.8 1 .9 1.6l.1.7h5.8l.1-.7c.1-.6.4-1.2.9-1.6A6.5 6.5 0 0 0 12 2.5Z"/></svg>
-</div><div class="service-number">۰۱</div><h3>ایده‌پردازی با هوش مصنوعی</h3><p>با هوش مصنوعی، ایده‌هایی خلق می‌کنیم که رقبا هنوز به آن‌ها فکر نکرده‌اند. صدها ایده متناسب با شخصیت و هدف برند شما.</p></div>
+<div class="service-number">۰۱</div>
+</div>
+<h3>ایده‌پردازی با هوش مصنوعی</h3>
+<p class="prose">با هوش مصنوعی، ایده‌هایی خلق می‌کنیم که رقبا هنوز به آن‌ها فکر نکرده‌اند. صدها ایده متناسب با شخصیت و هدف برند شما.</p>
+</div>
 
-<div class="service reveal" style="--d:.07s"><div class="service-icon">
+<div class="service reveal" style="--d:.07s">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 8.5h19v10a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-10Z"/><path d="M2.5 8.5 5 3.2h3.2L5.7 8.5M9.2 8.5 11.7 3.2h3.2l-2.5 5.3M16.2 8.5l2.5-5.3h2.8"/></svg>
-</div><div class="service-number">۰۲</div><h3>ساخت ویدیو با هوش مصنوعی</h3><p>فیلمنامه شما را صحنه‌به‌صحنه به یک اثر سینمایی تبدیل می‌کنیم.</p><ul><li>نورپردازی متناسب با فضای برند</li><li>زاویه‌های دید تأثیرگذار</li><li>ریتم روایی گیرا</li><li>دکوپاژ حرفه‌ای</li></ul></div>
+<div class="service-number">۰۲</div>
+</div>
+<h3>ساخت ویدیو با هوش مصنوعی</h3>
+<p class="prose">فیلمنامه شما را صحنه‌به‌صحنه به یک اثر سینمایی تبدیل می‌کنیم.</p>
+<ul><li>نورپردازی متناسب با فضای برند</li><li>زاویه‌های دید تأثیرگذار</li><li>ریتم روایی گیرا</li><li>دکوپاژ حرفه‌ای</li></ul>
+</div>
 
-<div class="service reveal" style="--d:.14s"><div class="service-icon">
+<div class="service reveal" style="--d:.14s">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.8"/><circle cx="6" cy="18" r="2.8"/><path d="M20.5 3.5 8.4 15.6M14.2 14.2l6.3 6.3M8.4 8.4l3.1 3.1"/></svg>
-</div><div class="service-number">۰۳</div><h3>تدوین سینمایی</h3><p>برش‌های هوشمند، کالرگرید حرفه‌ای، افکت‌های پیشرفته و صداگذاری استاندارد سینما. ویدیوهایی که در ذهن مخاطب ماندگار می‌شوند.</p></div>
+<div class="service-number">۰۳</div>
+</div>
+<h3>تدوین سینمایی</h3>
+<p class="prose">برش‌های هوشمند، کالرگرید حرفه‌ای، افکت‌های پیشرفته و صداگذاری استاندارد سینما. ویدیوهایی که در ذهن مخاطب ماندگار می‌شوند.</p>
+</div>
 
-<div class="service reveal"><div class="service-icon">
+<div class="service reveal">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m11 2.6 1.85 4.55L17.4 9l-4.55 1.85L11 15.4 9.15 10.85 4.6 9l4.55-1.85L11 2.6Z"/><path d="m18.4 14.3.85 2.05 2.05.85-2.05.85-.85 2.05-.85-2.05-2.05-.85 2.05-.85.85-2.05Z"/></svg>
-</div><div class="service-number">۰۴</div><h3>موشن‌گرافیک مدرن</h3><p>هر پیام برند را با انیمیشن‌های چشم‌نواز و پویا به یک داستان بصری تبدیل می‌کنیم.</p></div>
+<div class="service-number">۰۴</div>
+</div>
+<h3>موشن‌گرافیک مدرن</h3>
+<p class="prose">هر پیام برند را با انیمیشن‌های چشم‌نواز و پویا به یک داستان بصری تبدیل می‌کنیم.</p>
+</div>
 
-<div class="service reveal" style="--d:.07s"><div class="service-icon">
+<div class="service reveal" style="--d:.07s">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.8 18.6h2.4"/><path d="m10.6 8.6 4.2 2.6-4.2 2.6V8.6Z"/></svg>
-</div><div class="service-number">۰۵</div><h3>تیزر اینستاگرامی و ریلز</h3><p>ویدیوهای کوتاه و قدرتمند که در ۳ ثانیه اول مخاطب را متوقف می‌کنند و برای شبکه‌های اجتماعی بهینه شده‌اند.</p></div>
+<div class="service-number">۰۵</div>
+</div>
+<h3>تیزر اینستاگرامی و ریلز</h3>
+<p class="prose">ویدیوهای کوتاه و قدرتمند که در ۳ ثانیه اول مخاطب را متوقف می‌کنند و برای شبکه‌های اجتماعی بهینه شده‌اند.</p>
+</div>
 
-<div class="service reveal" style="--d:.14s"><div class="service-icon">
+<div class="service reveal" style="--d:.14s">
+<div class="service-top">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8h10.8l4.1 6.1L12 21.4 2.5 8.9l4.1-6.1Z"/><path d="M2.5 8.9h19M9.4 2.8 7.6 8.9 12 21.4M14.6 2.8l1.8 6.1L12 21.4"/></svg>
-</div><div class="service-number">۰۶</div><h3>پکیج کامل تبلیغاتی</h3><p>از ایده تا انتشار، همه‌چیز را به ما بسپار. تو روی برندت تمرکز کن؛ ما روی دیده‌شدنش.</p></div>
+<div class="service-number">۰۶</div>
+</div>
+<h3>پکیج کامل تبلیغاتی</h3>
+<p class="prose">از ایده تا انتشار، همه‌چیز را به ما بسپار. تو روی برندت تمرکز کن؛ ما روی دیده‌شدنش.</p>
+</div>
 
 </div>
-<div class="package reveal"><h3>یک پکیج کامل، یک تیم حرفه‌ای، یک نتیجه خیره‌کننده</h3><p>از ایده‌پردازی و کارگردانی تا تولید، تدوین و انتشار؛ همه‌چیز در یک مسیر حرفه‌ای.</p></div>
+<div class="package reveal">
+<h3>یک پکیج کامل، یک تیم حرفه‌ای، یک نتیجه خیره‌کننده</h3>
+<p>از ایده‌پردازی و کارگردانی تا تولید، تدوین و انتشار؛ همه‌چیز در یک مسیر حرفه‌ای.</p>
+</div>
 </section>
 
 <section id="portfolio">
+<div class="section-head">
 <div class="section-label reveal">نمونه‌کارها</div>
 <h2 class="section-title reveal" style="--d:.08s">دنیایی از <span>تصویر و خلاقیت.</span></h2>
+</div>
 <div class="portfolio">
 
 <div class="project reveal" role="button" tabindex="0" aria-label="پخش ویدیو: تبلیغ پاپ‌کورن"
@@ -300,21 +424,24 @@ onclick="openLightbox('menswear.mp4','تبلیغ پوشاک مردانه','mensw
 </section>
 
 <section class="about" id="about">
-<div class="section-label reveal">درباره‌ی Movilina</div>
 <div class="about-content">
-<h2 class="section-title reveal" style="--d:.08s">داستان برند شما، <span>شایسته‌ی دیده‌شدن است.</span></h2>
-<p class="reveal" style="--d:.16s">Movilina یک استودیوی خلاق در حوزه‌ی تبلیغات است که با ترکیب هوش مصنوعی، کارگردانی حرفه‌ای و تدوین سینمایی، محتوایی می‌سازد که توجه مخاطب را در چند ثانیه اول جذب می‌کند و برندها را از رقبا متمایز می‌سازد. از مرحله‌ی ایده‌پردازی تا تولید نهایی، تمام فرآیند با تمرکز بر خلاقیت، کیفیت و اثرگذاری طراحی و اجرا می‌شود تا هر ویدیو به یک تجربه‌ی بصری قدرتمند تبدیل شود.</p>
-<p class="reveal" style="--d:.22s">ما باور داریم هر برند داستانی دارد که باید دیده و شنیده شود. مأموریت Movilina تبدیل این داستان به یک تجربه‌ی بصری ماندگار است؛ از تیزرهای تبلیغاتی و محتوای شبکه‌های اجتماعی تا ویدیوهای مبتنی بر هوش مصنوعی و فیلم‌های تبلیغاتی حرفه‌ای. هدف ما افزایش دیده‌شدن، تقویت اعتماد مخاطب و کمک به رشد واقعی کسب‌وکار شماست.</p>
+<div class="section-head">
+<div class="section-label reveal">درباره‌ی Movilina</div>
+<h2 class="section-title wide reveal" style="--d:.08s">داستان برند شما، <span>شایسته‌ی دیده‌شدن است.</span></h2>
+</div>
+<p class="prose reveal" style="--d:.16s">Movilina یک استودیوی خلاق در حوزه‌ی تبلیغات است که با ترکیب هوش مصنوعی، کارگردانی حرفه‌ای و تدوین سینمایی، محتوایی می‌سازد که توجه مخاطب را در چند ثانیه اول جذب می‌کند و برندها را از رقبا متمایز می‌سازد. از مرحله‌ی ایده‌پردازی تا تولید نهایی، تمام فرآیند با تمرکز بر خلاقیت، کیفیت و اثرگذاری طراحی و اجرا می‌شود تا هر ویدیو به یک تجربه‌ی بصری قدرتمند تبدیل شود.</p>
+<p class="prose reveal" style="--d:.22s">ما باور داریم هر برند داستانی دارد که باید دیده و شنیده شود. مأموریت Movilina تبدیل این داستان به یک تجربه‌ی بصری ماندگار است؛ از تیزرهای تبلیغاتی و محتوای شبکه‌های اجتماعی تا ویدیوهای مبتنی بر هوش مصنوعی و فیلم‌های تبلیغاتی حرفه‌ای. هدف ما افزایش دیده‌شدن، تقویت اعتماد مخاطب و کمک به رشد واقعی کسب‌وکار شماست.</p>
 </div>
 </section>
 
 <section class="contact" id="contact">
-<div>
-<div class="section-label reveal">آماده‌ای شروع کنیم؟</div>
+<div class="contact-inner">
+<div class="section-label reveal" style="justify-content:center">آماده‌اید شروع کنیم؟</div>
 <h2 class="reveal" style="--d:.08s">بیایید اولین قدم را <span>با هم برداریم.</span></h2>
-<p class="reveal" style="--d:.16s">اگر به دنبال تبلیغاتی متفاوت، خلاقانه و ماندگار هستید، آماده‌ایم ایده شما را به یک ویدیوی حرفه‌ای تبدیل کنیم. برای دریافت مشاوره رایگان و شروع همکاری، همین امروز با ما در ارتباط باشید.</p>
+<p class="prose-center reveal" style="--d:.16s">اگر به دنبال تبلیغاتی متفاوت، خلاقانه و ماندگار هستید، آماده‌ایم ایده شما را به یک ویدیوی حرفه‌ای تبدیل کنیم. برای دریافت مشاوره رایگان و شروع همکاری، همین امروز با ما در ارتباط باشید.</p>
 <a href="https://wa.me/989379732085" class="btn-gold reveal" style="--d:.22s" target="_blank" rel="noopener">شروع همکاری در واتساپ ↗</a>
 <div class="contact-info">
+
 <div class="contact-item reveal"><span>
 <svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
 تلفن و واتساپ</span><a href="tel:+989379732085">۰۹۳۷۹۷۳۲۰۸۵</a></div>
@@ -325,7 +452,8 @@ onclick="openLightbox('menswear.mp4','تبلیغ پوشاک مردانه','mensw
 
 <div class="contact-item reveal" style="--d:.14s"><span>
 <svg class="icon-sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg>
-اینستاگرام</span><a href="#" id="instagramLink">Movilina</a></div>
+اینستاگرام</span><a href="https://www.instagram.com/movilina.ai" target="_blank" rel="noopener">movilina.ai</a></div>
+
 </div>
 </div>
 </section>
@@ -333,6 +461,7 @@ onclick="openLightbox('menswear.mp4','تبلیغ پوشاک مردانه','mensw
 <footer>
 <div>© ۲۰۲۶ MOVILINA</div>
 <div>از ایده تا تبلیغ نهایی؛ با هوش مصنوعی و تخصص انسانی</div>
+<div><a href="https://www.instagram.com/movilina.ai" target="_blank" rel="noopener">instagram.com/movilina.ai</a></div>
 </footer>
 
 <div class="lightbox" id="lightbox">
@@ -344,6 +473,11 @@ onclick="openLightbox('menswear.mp4','تبلیغ پوشاک مردانه','mensw
 </div>
 
 <script>
+/* ---------- nav: condense on scroll ---------- */
+const navEl=document.getElementById("nav");
+const onScroll=()=>navEl.classList.toggle("scrolled",window.scrollY>60);
+addEventListener("scroll",onScroll,{passive:true});onScroll();
+
 /* ---------- mobile menu ---------- */
 const navToggle=document.getElementById("navToggle");
 const mobileMenu=document.getElementById("mobileMenu");
@@ -395,7 +529,7 @@ lb.addEventListener("click",e=>{if(e.target===lb)closeLightbox()});
 document.addEventListener("keydown",e=>{
 if(!lb.classList.contains("open"))return;
 if(e.key==="Escape"){closeLightbox();return}
-if(e.key==="Tab"){                       /* keep focus inside the modal */
+if(e.key==="Tab"){
 const f=[lbClose,lbVideo];
 const i=f.indexOf(document.activeElement);
 e.preventDefault();
@@ -403,7 +537,6 @@ f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus();
 }
 });
 
-/* cards are divs, so Enter/Space must act like a click */
 document.querySelectorAll(".project").forEach(card=>{
 card.addEventListener("keydown",e=>{
 if(e.key==="Enter"||e.key===" "){e.preventDefault();card.click()}
