@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movilina | از ایده تا تبلیغ نهایی</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+:root{--black:#030303;--gold:#D4AF37;--gold-light:#F5D76E;--purple:#6D28D9;--cream:#F7F2E8;--muted:#9A948A;--border:rgba(212,175,55,.25)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--cream);font-family:'Vazirmatn',sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;width:700px;height:700px;top:-350px;right:-250px;background:radial-gradient(circle,rgba(212,175,55,.18),rgba(109,40,217,.10),transparent 70%);filter:blur(35px);pointer-events:none;z-index:-1}
+body::after{content:"";position:fixed;width:600px;height:600px;bottom:-350px;left:-300px;background:radial-gradient(circle,rgba(109,40,217,.15),transparent 70%);filter:blur(40px);pointer-events:none;z-index:-1}
+nav{position:fixed;top:0;right:0;width:100%;height:90px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;z-index:100;background:linear-gradient(to bottom,rgba(3,3,3,.96),transparent)}
+.logo{font-family:'Playfair Display',serif;direction:ltr;font-size:28px;letter-spacing:4px;color:var(--gold-light);text-shadow:0 0 25px rgba(212,175,55,.25)}
+.nav-links{display:flex;gap:38px;list-style:none}.nav-links a{color:#B4AEA4;text-decoration:none;font-size:12px;transition:.4s}.nav-links a:hover{color:var(--gold-light)}
+.nav-button{color:var(--gold-light);border:1px solid rgba(212,175,55,.55);padding:12px 22px;text-decoration:none;font-size:11px;transition:.4s}.nav-button:hover{background:var(--gold);color:#050505}
+.video-hero{position:relative;width:100%;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#000}
+.hero-video{position:absolute;top:50%;left:50%;width:100%;height:100%;transform:translate(-50%,-50%);object-fit:cover;z-index:1}
+.video-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(0,0,0,.12),transparent 30%,transparent 65%,rgba(0,0,0,.55));pointer-events:none}
+.hero-bottom-fade{position:absolute;bottom:0;left:0;width:100%;height:180px;z-index:3;background:linear-gradient(to bottom,transparent,#030303);pointer-events:none}
+.scroll-down{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:5;color:rgba(255,255,255,.7);font-size:10px;letter-spacing:2px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-down span{width:1px;height:40px;display:block;background:linear-gradient(to bottom,#F5D76E,transparent);animation:scrollLine 2s infinite}
+@keyframes scrollLine{0%{opacity:0;transform:translateY(-8px)}50%{opacity:1}100%{opacity:0;transform:translateY(10px)}}
+section{padding:140px 7vw}.section-label{color:var(--gold);font-size:11px;letter-spacing:3px;margin-bottom:22px}.section-title{font-size:clamp(38px,5vw,70px);font-weight:300;line-height:1.45}.section-title span{color:var(--gold-light)}
+.gold-line{width:140px;height:1px;margin:auto;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.intro{max-width:1100px;margin:auto}.intro-text{margin-top:45px;max-width:900px;color:#B3AEA5;font-size:16px;line-height:2.5}
+.ai-section{position:relative;background:radial-gradient(circle at 25% 45%,rgba(109,40,217,.13),transparent 35%)}
+.ai-card{margin-top:60px;padding:55px;border:1px solid var(--border);background:linear-gradient(135deg,rgba(212,175,55,.055),rgba(109,40,217,.07));position:relative;overflow:hidden}
+.ai-icon{font-size:42px;margin-bottom:25px}.ai-card h3{font-size:30px;color:var(--gold-light);font-weight:500;margin-bottom:20px}.ai-card p{color:var(--muted);line-height:2.3;max-width:850px}
+.services{margin-top:65px;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(212,175,55,.2)}
+.service{min-height:300px;padding:45px;background:#030303;transition:.5s}.service:hover{background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(109,40,217,.08));transform:translateY(-5px)}
+.service-icon{font-size:35px;margin-bottom:20px}.service-number{color:var(--gold);font-size:11px;letter-spacing:2px}.service h3{font-size:27px;color:var(--gold-light);font-weight:500;margin:20px 0 15px}.service p{color:var(--muted);font-size:14px;line-height:2.2}.service ul{margin-top:18px;padding-right:20px;color:#A7A197;font-size:13px;line-height:2.3}
+.package{margin-top:55px;border:1px solid rgba(212,175,55,.35);padding:55px;text-align:center;background:radial-gradient(circle,rgba(212,175,55,.07),transparent 65%)}.package h3{color:var(--gold-light);font-size:32px;margin-bottom:18px}.package p{color:var(--muted);line-height:2.2}
+.portfolio{margin-top:65px;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.project{position:relative;height:390px;overflow:hidden;border:1px solid rgba(212,175,55,.20);background:#070707;transition:.5s}.project:hover{transform:translateY(-8px);border-color:rgba(212,175,55,.65);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.project video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}.project-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.05) 65%);pointer-events:none}
+.project-play{position:absolute;z-index:4;top:50%;left:50%;transform:translate(-50%,-50%);width:65px;height:65px;border-radius:50%;border:1px solid rgba(245,215,110,.85);display:flex;align-items:center;justify-content:center;color:var(--gold-light);background:rgba(0,0,0,.35);backdrop-filter:blur(5px);font-size:18px;transition:.4s;cursor:pointer}.project-play:hover{background:var(--gold);color:#000;transform:translate(-50%,-50%) scale(1.1)}
+.project-info{position:absolute;z-index:4;bottom:22px;right:22px;left:22px}.project-number{color:var(--gold);font-size:10px;margin-bottom:7px}.project h3{font-size:18px;color:#fff;font-weight:500}.project p{color:#AAA49A;font-size:10px;margin-top:5px}
+.about{background:radial-gradient(circle at 80% 50%,rgba(109,40,217,.09),transparent 35%)}.about-content{max-width:1050px}.about-content p{color:#B1ACA3;font-size:15px;line-height:2.6;margin-top:30px}
+.contact{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle,rgba(109,40,217,.10),transparent 50%)}.contact h2{font-size:clamp(45px,6vw,80px);font-weight:300;line-height:1.5}.contact h2 span{color:var(--gold-light)}.contact>div>p{max-width:650px;margin:30px auto 40px;color:var(--muted);line-height:2.3}
+.hero-button{display:inline-block;padding:17px 38px;color:#080808;background:linear-gradient(110deg,#8B6914,#D4AF37,#F5D76E);text-decoration:none;font-size:12px;font-weight:600;box-shadow:0 10px 40px rgba(0,0,0,.4),0 0 30px rgba(212,175,55,.18);transition:.4s}.hero-button:hover{transform:translateY(-5px)}
+.contact-info{margin:55px auto 0;max-width:750px;display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.contact-item{padding:25px;border:1px solid rgba(212,175,55,.2);background:rgba(255,255,255,.015)}.contact-item span{display:block;color:var(--gold);font-size:12px;margin-bottom:10px}.contact-item a{color:#E4DFD4;text-decoration:none;font-size:14px}.contact-item a:hover{color:var(--gold-light)}
+footer{border-top:1px solid rgba(212,175,55,.15);padding:35px 7vw;display:flex;justify-content:space-between;color:#625E57;font-size:10px}
+@media(max-width:1000px){.portfolio{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){nav{height:75px;padding:0 20px}.nav-links{display:none}.logo{font-size:23px}.nav-button{padding:9px 12px;font-size:9px}.video-hero{height:100svh;min-height:550px}.hero-bottom-fade{height:150px}section{padding:100px 22px}.services{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr}.project{height:430px}.contact-info{grid-template-columns:1fr}.ai-card{padding:35px 25px}.package{padding:35px 25px}.service{padding:35px 25px}footer{flex-direction:column;gap:15px;text-align:center}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">MOVILINA</div>
+<ul class="nav-links">
+<li><a href="#services">خدمات ما</a></li>
+<li><a href="#portfolio">نمونه‌کارها</a></li>
+<li><a href="#about">درباره ما</a></li>
+<li><a href="#contact">تماس با ما</a></li>
+</ul>
+<a href="#contact" class="nav-button">شروع همکاری</a>
+</nav>
+
+<section class="video-hero">
+<video class="hero-video" autoplay muted loop playsinline preload="auto">
+<source src="movilina-intro.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+<div class="hero-bottom-fade"></div>
+<div class="scroll-down"><span></span>اسکرول کنید</div>
+</section>
+
+<div class="gold-line"></div>
+
+<section class="intro">
+<div class="section-label">MOVILINA | استودیوی خلاق تبلیغات</div>
+<h2 class="section-title">هر چیز ماندگاری، <span>از یک ایده شروع می‌شود.</span></h2>
+<p class="intro-text">
+همه‌چیز از یک ایده‌ی ناب شروع می‌شود؛ با کارگردانیِ دقیق، دکوپاژی که چشم را می‌رباید، و تدوینی که ریتمِ دل‌نشینِ داستان را می‌سازد.
+تمام این مسیر، با ذهن و تخصصِ تیمِ ما پیش می‌رود، و در لحظه‌ی ساخت فیلم، هوش مصنوعی را به خدمت می‌گیریم تا تصاویری خلق کنیم که تا پیش از این، فقط در رویا ممکن بودند.
+<br><br>
+نتیجه؟
+<br>
+ویدیوهایی که نه‌تنها دیده می‌شوند، که در ذهن می‌مانند، حس می‌شوند، و برندِ شما را متمایز می‌کنند.
+</p>
+</section>
+
+<section class="ai-section">
+<div class="section-label">هوش مصنوعی × خلاقیت</div>
+<h2 class="section-title">ایده‌هایی خلق کن که <span>رقبا هنوز به آن فکر نکرده‌اند.</span></h2>
+<div class="ai-card">
+<div class="ai-icon">🧠</div>
+<h3>خلاقیت، در چند ثانیه</h3>
+<p>دیگر وقت هدر رفتن برای جلسات طوفان فکری نیست. با کمک هوش مصنوعی، صدها ایده‌ی نوآورانه و سفارشی‌سازی‌شده مخصوص برند شما خلق می‌کنیم. سپس بهترین ایده‌ها را انتخاب می‌کنیم؛ ایده‌هایی که نه‌تنها خلاق‌اند، بلکه شدنی و تأثیرگذارند.</p>
+</div>
+</section>
+
+<section id="services">
+<div class="section-label">خدمات ما</div>
+<h2 class="section-title">از یک ایده ساده تا <span>یک تبلیغ ماندگار.</span></h2>
+<div class="services">
+
+<div class="service"><div class="service-icon">🔥</div><div class="service-number">۰۱</div><h3>ایده‌پردازی با هوش مصنوعی</h3><p>با هوش مصنوعی، ایده‌هایی خلق می‌کنیم که رقبا هنوز به آن‌ها فکر نکرده‌اند. صدها ایده متناسب با شخصیت و هدف برند شما.</p></div>
+
+<div class="service"><div class="service-icon">🎬</div><div class="service-number">۰۲</div><h3>ساخت ویدیو با هوش مصنوعی</h3><p>فیلمنامه شما را صحنه‌به‌صحنه به یک اثر سینمایی تبدیل می‌کنیم.</p><ul><li>نورپردازی متناسب با فضای برند</li><li>زاویه‌های دید تأثیرگذار</li><li>ریتم روایی گیرا</li><li>دکوپاژ حرفه‌ای</li></ul></div>
+
+<div class="service"><div class="service-icon">✂️</div><div class="service-number">۰۳</div><h3>تدوین سینمایی</h3><p>برش‌های هوشمند، کالرگرید حرفه‌ای، افکت‌های پیشرفته و صداگذاری استاندارد سینما. ویدیوهایی که در ذهن مخاطب ماندگار می‌شوند.</p></div>
+
+<div class="service"><div class="service-icon">✨</div><div class="service-number">۰۴</div><h3>موشن‌گرافیک مدرن</h3><p>هر پیام برند را با انیمیشن‌های چشم‌نواز و پویا به یک داستان بصری تبدیل می‌کنیم.</p></div>
+
+<div class="service"><div class="service-icon">📱</div><div class="service-number">۰۵</div><h3>تیزر اینستاگرامی و ریلز</h3><p>ویدیوهای کوتاه و قدرتمند که در ۳ ثانیه اول مخاطب را متوقف می‌کنند و برای شبکه‌های اجتماعی بهینه شده‌اند.</p></div>
+
+<div class="service"><div class="service-icon">💎</div><div class="service-number">۰۶</div><h3>پکیج کامل تبلیغاتی</h3><p>از ایده تا انتشار، همه‌چیز را به ما بسپار. تو روی برندت تمرکز کن؛ ما روی دیده‌شدنش.</p></div>
+
+</div>
+<div class="package"><h3>یک پکیج کامل، یک تیم حرفه‌ای، یک نتیجه خیره‌کننده</h3><p>از ایده‌پردازی و کارگردانی تا تولید، تدوین و انتشار؛ همه‌چیز در یک مسیر حرفه‌ای.</p></div>
+</section>
+
+<section id="portfolio">
+<div class="section-label">نمونه‌کارها</div>
+<h2 class="section-title">دنیایی از <span>تصویر و خلاقیت.</span></h2>
+<div class="portfolio">
+
+<div class="project">
+<video muted loop playsinline preload="metadata"><source src="popcorn.mp4" type="video/mp4"></video>
+<div class="project-overlay"></div><div class="project-play" onclick="playVideo(this)">▶</div>
+<div class="project-info"><div class="project-number">۰۱</div><h3>تبلیغ پاپ‌کورن</h3><p>ویدیوی تبلیغاتی سینمایی</p></div>
+</div>
+
+<div class="project">
+<video muted loop playsinline preload="metadata"><source src="icecream.mp4" type="video/mp4"></video>
+<div class="project-overlay"></div><div class="project-play" onclick="playVideo(this)">▶</div>
+<div class="project-info"><div class="project-number">۰۲</div><h3>تبلیغ سینمایی بستنی</h3><p>ویدیوی تبلیغاتی</p></div>
+</div>
+
+<div class="project">
+<video muted loop playsinline preload="metadata"><source src="burger.mp4" type="video/mp4"></video>
+<div class="project-overlay"></div><div class="project-play" onclick="playVideo(this)">▶</div>
+<div class="project-info"><div class="project-number">۰۳</div><h3>تبلیغ سینمایی برگر</h3><p>کمپین تبلیغاتی</p></div>
+</div>
+
+<div class="project"><div class="project-info"><div class="project-number">۰۴</div><h3>نمونه‌کار جدید</h3><p>به‌زودی</p></div></div>
+<div class="project"><div class="project-info"><div class="project-number">۰۵</div><h3>نمونه‌کار جدید</h3><p>به‌زودی</p></div></div>
+<div class="project"><div class="project-info"><div class="project-number">۰۶</div><h3>نمونه‌کار جدید</h3><p>به‌زودی</p></div></div>
+<div class="project"><div class="project-info"><div class="project-number">۰۷</div><h3>نمونه‌کار جدید</h3><p>به‌زودی</p></div></div>
+<div class="project"><div class="project-info"><div class="project-number">۰۸</div><h3>نمونه‌کار جدید</h3><p>به‌زودی</p></div></div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="section-label">درباره‌ی Movilina</div>
+<div class="about-content">
+<h2 class="section-title">داستان برند شما، <span>شایسته‌ی دیده‌شدن است.</span></h2>
+<p>Movilina یک استودیوی خلاق در حوزه‌ی تبلیغات است که با ترکیب هوش مصنوعی، کارگردانی حرفه‌ای و تدوین سینمایی، محتوایی می‌سازد که توجه مخاطب را در چند ثانیه اول جذب می‌کند و برندها را از رقبا متمایز می‌سازد. از مرحله‌ی ایده‌پردازی تا تولید نهایی، تمام فرآیند با تمرکز بر خلاقیت، کیفیت و اثرگذاری طراحی و اجرا می‌شود تا هر ویدیو به یک تجربه‌ی بصری قدرتمند تبدیل شود.</p>
+<p>ما باور داریم هر برند داستانی دارد که باید دیده و شنیده شود. مأموریت Movilina تبدیل این داستان به یک تجربه‌ی بصری ماندگار است؛ از تیزرهای تبلیغاتی و محتوای شبکه‌های اجتماعی تا ویدیوهای مبتنی بر هوش مصنوعی و فیلم‌های تبلیغاتی حرفه‌ای. هدف ما افزایش دیده‌شدن، تقویت اعتماد مخاطب و کمک به رشد واقعی کسب‌وکار شماست.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div>
+<div class="section-label">آماده‌ای شروع کنیم؟</div>
+<h2>بیایید اولین قدم را <span>با هم برداریم.</span></h2>
+<p>اگر به دنبال تبلیغاتی متفاوت، خلاقانه و ماندگار هستید، آماده‌ایم ایده شما را به یک ویدیوی حرفه‌ای تبدیل کنیم. برای دریافت مشاوره رایگان و شروع همکاری، همین امروز با ما در ارتباط باشید.</p>
+<a href="https://wa.me/989379732085" class="hero-button" target="_blank">شروع همکاری در واتساپ ↗</a>
+<div class="contact-info">
+<div class="contact-item"><span>📞 تلفن و واتساپ</span><a href="tel:09379732085">۰۹۳۷۹۷۳۲۰۸۵</a></div>
+<div class="contact-item"><span>✉️ ایمیل</span><a href="mailto:s.farahmandian@gmail.com">s.farahmandian@gmail.com</a></div>
+<div class="contact-item" style="grid-column:1/-1;"><span>📷 اینستاگرام</span><a href="#">صفحه اینستاگرام Movilina</a></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div>© ۲۰۲۶ MOVILINA</div>
+<div>از ایده تا تبلیغ نهایی؛ با هوش مصنوعی و تخصص انسانی</div>
+</footer>
+
+<script>
+function playVideo(button){
+const project=button.parentElement;
+const video=project.querySelector("video");
+document.querySelectorAll(".project video").forEach(v=>{if(v!==video)v.pause()});
+document.querySelectorAll(".project-play").forEach(b=>{if(b!==button)b.innerHTML="▶"});
+if(video.paused){video.play();button.innerHTML="❚❚"}else{video.pause();button.innerHTML="▶"}
+}
+document.querySelectorAll(".project video").forEach(video=>{
+video.addEventListener("ended",function(){
+const button=this.parentElement.querySelector(".project-play");
+button.innerHTML="▶";
+});
+});
+</script>
+
+</body>
+</html>
